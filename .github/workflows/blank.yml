@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  noop:
+  do-something:
     runs-on: ubuntu-latest
-    steps: []
+    steps:
+      - name: Do something
+        run: echo "something"
